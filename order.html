@@ -11,6 +11,137 @@
     <title>Pizza</title>
 </head>
 <body>
+    <div class="bar">
+        <div class="logo">
+            <img src="images/logg-removebg-preview.png" width="100px" height="50px">
+        </div>
+        <div class="navb">
+            <ul class="nav nav-pills">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="order.html">order</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </div>
     
+    <h1>Or<span id="doc">d</span>er</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="men">
+                <img src="images/menu2.jpg">
+            </div>
+            </div>
+            <div class="col-md-8">
+                <div class="part-1">
+                <form id="form1" class="form" name="form1" >
+                    <legend>Please put your order here:</legend>
+
+                    <label for="pizza">Select your pizza</label>
+                    <select id="pizza" name="pizza" required>
+                            <option disabled selected> type</option>
+                            <option value="neapolitant">NEAPOLITANT</option>
+                            <option value="beef">BEEF</option>
+                            <option value="mayonaise">MAYONAISE</option>
+                            <option value="cheese">CHEESE</option>
+                            <option value="greek">GREEK</option>
+                            <option value="carlifonia">CARLIFONIA</option>
+                    </select>
+
+                    <label for="size">Select a size</label>
+                    <select id="size" name="size" required>
+                            <option disabled selected>size</option>
+                            <option value="large">LARGE.......Ksh.1,200</option>
+                            <option value="medium">MEDIUM.....Ksh.700</option>
+                            <option value="small">SMALL.......Ksh.400</option>
+                    </select>
+
+                    <label for="crust">Select a crust</label>
+                    <select id="crust" name="crust" required>
+                            <option disabled selected> crust</option>
+                            <option value="crispy">CRISPY --- Ksh. 150</option>
+                            <option value="cheese">cheese --- Ksh.100</option>
+                            <option value="beef">BEEF  --- Ksh.150</option>
+                    </select>
+                    <label for="number">Number</label>
+                    <input type="number" id="number" name="number" placeholder="put number of pizza here" required>
+                    <label for="toppings">Select  toppings</label><br>
+                    <p>Small ---------> 50, Medium ---------> 100 & Large --------> 150</p>
+            
+                    <div class="checkbox">
+                        <input type="checkbox" value="sausage" name="toppings" id="sausage">
+                        <label for="Sausage">SAUSAGE</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="cheese" name="toppings" id="cheese">
+                        <label for="cheese">CHEESE</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="mushroom" name="toppings" id="mushroom">
+                        <label for="mushroom">MUSHROOM</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="tomato" name="toppings" id="tomato">
+                        <label for="bacon">TOMATO</label>
+                    </div><br>
+                    <input type="submit" value="Next" class="button" id="next">
+                   
+                </form>
+            </div>
+            <div class="part-2">
+                <h2>Check your order:</h2>
+                <table class="confirm-order">
+                    <thead>
+                        <tr>
+                            <th><strong>NAME</strong></th>
+                            <th><strong>SIZE</strong></th>
+                            <th><strong>CRUST</strong></th>
+                            <th><strong>TOPPINGS</strong></th>
+                            <th><strong>NUMBER</strong></th>
+                            <th><strong>TOTAL</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody class="current-order">
+                        <tr>
+                            <td id="name"></td>
+                            <td id="size"></td>
+                            <td id="crust"></td>
+                            <td id="toppings"></td>
+                            <td id="number"></td>
+                            <td id="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-buttons">
+                    <button type="button" value="DELIVERY?" class="button" id="delivery">DELIVERY</button>
+                    <button type="button" class="button" value="PICK UP" id="pick-up">PICK UP</button>
+                    <button type="submit" value="ADD ANOTHER PIZZA" class="button" id="add">ADD ANOTHER PIZZA</button>
+                    <div id="picks"></div>
+                </div>
+            </div>
+            <div class="part-3">
+                <form id="form2" class="form" name="form2">
+                    <legend>Have your order delivered at Ksh. 200
+                    </legend>
+                    <label for="full-name">Full name</label>
+                    <input type="text" id="full-name" placeholder="Full name here">
+                    <div class="dad">
+                        <label for="telephone">Phone Number</label>
+                        <input type="tel" id="phone-number" placeholder="0700293918">
+                    </div>
+                    <div class="dad">
+                        <label for="address">Location</label>
+                        <input type="text" id="location" placeholder="eastleught,nairobi">
+                    </div>
+    
+                    <input type="submit" value="CHECKOUT" class="button" id="checkout">
+                </form>
+                <br>
+                <div id="output"></div>
+            </div>
+            </div>
+            </div>
+        </div>
 </body>
 </html>
