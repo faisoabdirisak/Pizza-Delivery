@@ -56,4 +56,17 @@ body{
     margin-left: -20px;
 }
 
-/* menu page */
+
+/* menu section */
+h1{
+    text-align: center;
+}
+.row{
+    margin: 10px;
+}
+.col-md-4{
+    padding: 10px;
+}
+.con img{
+    border-radius: 20px;
+}
