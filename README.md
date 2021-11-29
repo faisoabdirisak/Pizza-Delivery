@@ -4,7 +4,7 @@
 
 ## Live link to this project's GitHub Pages.
 
-### [View Live Site]()
+### [View Live Site](https://faisoabdirisak.github.io/Pizza-Delivery/)
 
 ## Table of Content
 
